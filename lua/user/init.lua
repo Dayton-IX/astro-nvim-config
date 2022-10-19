@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "gruvbox",
+  colorscheme = "default_theme",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -203,11 +203,6 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
-      {
-        "morhetz/gruvbox",
-        as = "gruvbox",
-        config = function() require("gruvbox").setup {} end,
-      },
     },
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
